@@ -1,0 +1,835 @@
+@font-face {
+    font-family: "Golos-Text_Bold";
+    src: url("../fonts/Golos-Text_Bold.ttf");
+}
+
+@font-face {
+    font-family: "Golos-Text_DemiBold";
+    src: url("../fonts/Golos-Text_DemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Golos-Text_Regular";
+    src: url("../fonts/Golos-Text_Regular.ttf");
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #131313;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1200px;
+    width: 1200px;
+}
+
+
+
+
+header {
+    font-family: "Golos-Text_Regular";
+    display: flex;
+    justify-content: space-between;
+    margin: 2.375rem auto 3rem auto;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 1.25rem;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu .burger-item {
+    background-color: #3586ff;
+    height: 5px;
+    width: 40px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.burger-menu .burger-item:nth-child(3) {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-right: 1.25rem;
+}
+
+header nav a:nth-child(4) {
+    margin-right: 0;
+}
+
+header .icons-header {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+header .icons-header .icon-text {
+    display: flex;
+    align-items: center;
+}
+
+header .icons-header .icon-text a {
+    font-size: 0.875rem;
+    color: #f0f0f0;
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+.main-screen {
+    margin: 0px auto;
+    width: 100%;
+    height: 37.5rem;
+    background: url('../img/1.jpg');
+    border-radius: 6px;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-screen .text {
+    margin-left: 4.375rem;
+    padding-top: 13.25rem;
+}
+
+.main-screen .text h1 {
+    font-family: "Golos-Text_Bold";
+    font-size: 3.125rem;
+    color: #f0f0f0;
+}
+
+.small-info .klass {
+    font-size: 1rem;
+    color: rgb(240, 240, 240);
+}
+
+.small-info {
+    font-size: 0.875rem;
+    display: flex;
+    color: rgba(240, 240, 240, 0.6);
+    align-items: center;
+    font-family: "Golos-Text_Regular";
+    margin: 0.5rem 0 0.625rem 0;
+}
+
+.small-info p {
+    margin-right: 0.625rem;
+}
+
+.small-info .old p {
+    margin: 0;
+    font-size: 0.75rem;
+    padding: 1px 4px 1px 4px;
+    border: 1px solid rgba(240, 240, 240, 0.6);
+    border-radius: 2px;
+}
+
+.main-screen .text .info {
+    font-family: "Golos-Text_Regular";
+    font-size: 1rem;
+    color: #dedede;
+    margin-bottom: 2rem;
+}
+
+.buttons-tv {
+    display: flex;
+}
+
+.buttons-tv a,
+.buttons-tv button {
+    padding: 1rem 2.125rem 1rem 2.125rem;
+    font-family: "Golos-Text_DemiBold";
+    font-size: 0.875rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: #f0f0f0;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.buttons-tv a p {
+    margin-left: 0.5rem;
+}
+
+.buttons-tv a:nth-child(1) {
+    background: linear-gradient(to right, #0052d4, #6eb1fc);
+}
+
+.buttons-tv a:nth-child(2),
+.buttons-tv button {
+    margin-left: 0.875rem;
+    padding: 1rem 1.125rem 1rem 1.125rem;
+    background: linear-gradient(to right, #000d20, #1b1c26);
+}
+
+
+
+
+
+.rec {
+    margin: 5.875rem auto 6.5rem auto;
+    color: #f0f0f0;
+}
+
+.rec .title h2 {
+    font-family: "Golos-Text_Bold";
+    font-size: 2.5rem;
+}
+
+.rec .movies {
+    margin-top: 2.875rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.375rem;
+}
+
+.rec .movies .film img {
+    border-radius: 6px;
+}
+
+.rec .movies .film h3 {
+    font-size: 1rem;
+    font-family: "Golos-Text_DemiBold";
+    margin: 0.625rem 0 0.125rem 0;
+}
+
+.rec .movies .film p {
+    font-size: 0.875rem;
+    font-family: "Golos-Text_Regular";
+    color: rgba(240, 240, 240, 0.6);
+}
+
+
+
+
+
+.kosmos {
+    width: 100%;
+    height: 31.25rem;
+    background: url('../img/6.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.kosmos .text {
+    margin-left: 4.375rem;
+    border-radius: 6px;
+    color: #f0f0f0;
+}
+
+.kosmos .text h2 {
+    text-transform: uppercase;
+    width: 50%;
+    font-size: 3.125rem;
+    font-family: "Golos-Text_Bold";
+}
+
+.kosmos .text p {
+    font-family: "Golos-Text_Regular";
+    color: #dedede;
+    font-size: 1rem;
+    margin: 1.375rem 0 2rem 0;
+}
+
+.kosmos .text button {
+    color: #f0f0f0;
+    padding: 1rem 2rem 1rem 2rem;
+    font-family: "Golos-Text_DemiBold";
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #0052d4, #6fb0fc);
+}
+
+
+
+
+
+
+.week {
+    display: flex;
+    margin: 6.25rem auto 6.25rem auto;
+    justify-content: space-between;
+}
+
+.week .text .open-week {
+    border-radius: 30px;
+    height: 2.25rem;
+    width: 11.25rem;
+    font-size: 0.75rem;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-family: "Golos-Text_Bold";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #f9502e, #eb9519 85%);
+}
+
+.week .text h2 {
+    margin-top: 0.5rem;
+    font-size: 3.125rem;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-family: "Golos-Text_Bold";
+}
+
+.week .text h3 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    font-family: "Golos-Text_Bold";
+}
+
+.week .text .info p,
+.week .text .tab-block .content p {
+    font-size: 1rem;
+    color: #dedede;
+    font-family: "Golos-Text_Regular";
+}
+
+.tab-block .tabs {
+    display: flex;
+    margin: 2.5rem 0 1.5rem 0;
+}
+
+.tab-block .tabs a {
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    margin-right: 1.875rem;
+    display: flex;
+    color: rgba(240, 240, 240, 0.4);
+    font-family: "Golos-Text_Bold";
+    font-size: 1rem;
+}
+
+.tab-block .tabs a:nth-child(3) {
+    margin-right: 0;
+}
+
+.tab-block .tabs a:focus {
+    color: #f0f0f0;
+    border-bottom: 2px solid #6fb1fc;
+}
+
+.week .images img {
+    border-radius: 8px;
+}
+
+.week .images .many-images {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+.week .images .many-images .stroke-one,
+.week .images .many-images .stroke-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.week .images .many-images .stroke-one {
+    margin-bottom: 1.875rem;
+}
+
+
+
+
+
+
+
+.big-container {
+    width: 100%;
+    background: #1f1f1f;
+}
+
+.ustroistva {
+    display: flex;
+    justify-content: space-between;
+    padding: 6.25rem 0 6.25rem 0;
+    align-items: center;
+}
+
+.ustroistva .text h2 {
+    font-size: 1.875rem;
+    color: #f0f0f0;
+    font-family: "Golos-Text_Bold";
+}
+
+.ustroistva .text p {
+    font-size: 1rem;
+    color: #dedede;
+    font-family: "Golos-Text_Regular";
+    margin: 2rem 0 2rem 0;
+}
+
+.ustroistva .text .blue-letters {
+    display: flex;
+    flex-direction: column;
+}
+
+.ustroistva .text .columns {
+    display: flex;
+}
+
+.ustroistva .text .columns .blue-letters:nth-child(1) {
+    margin-right: 1.375rem;
+}
+
+.ustroistva .text .blue-letters h3 {
+    background: linear-gradient(to right, #0052d4, #6fb1fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Golos-Text_Bold";
+    font-size: 2.5rem;
+}
+
+.ustroistva .text .blue-letters p {
+    margin-top: 0.125rem;
+}
+
+.ustroistva .text .blue-letters .blue-letter {
+    height: 5.625rem;
+}
+
+
+
+
+
+
+.following {
+    margin: 6.25rem auto 6.25rem auto;
+}
+
+.following .title h2 {
+    font-size: 3.125rem;
+    font-family: "Golos-Text_Bold";
+    color: #f0f0f0;
+    text-transform: uppercase;
+}
+
+.following form p,
+.following .title p {
+    font-size: 1rem;
+    font-family: "Golos-Text_Regular";
+    color: #dedede;
+}
+
+.following form .tree-inputs p {
+    margin-bottom: 0.875rem;
+}
+
+.following .title p {
+    margin: 2.125rem 0 3.5rem 0;
+}
+
+.following form .tree-inputs input {
+    background: transparent;
+    height: 3.25rem;
+    width: 29.125rem;
+    border: 1px solid #565656;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 20px;
+    color: #f0f0f0;
+}
+
+.following form .tree-inputs .one-input {
+    margin-bottom: 1.5rem;
+}
+
+.following form .tree-inputs .one-input:nth-child(3) {
+    margin-bottom: 0;
+}
+
+
+.following .center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.following .center .tarif {
+    margin: 2rem 0 2rem 0;
+}
+
+.following .center .tarif p {
+    margin-bottom: 1rem;
+}
+
+.following .center label {
+    font-size: 1rem;
+    font-family: "Golos-Text_Regular";
+    color: #dedede;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.following .center .radio-boxes {
+    display: flex;
+}
+
+.following .center .radio-boxes .radio-box{
+    margin-right: 0.75rem;
+}
+
+form .radio-boxes label{
+    display: flex;
+    align-items: center;
+}
+
+form .radio-boxes .radio{
+    display: none;
+}
+
+form .radio-boxes .fake{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #dedede;
+    border-radius: 50%;
+    position: relative;
+}
+
+form .radio-boxes .fake::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(1rem/2);
+    height:calc(1rem/2);
+    background: #dedede;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+form .radio-boxes .radio:checked + .fake::before{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+form .radio-box .text {
+    padding-left: 10px;
+}
+
+.following .center .radio-boxes .radio-box:nth-child(4) {
+    margin-right: 0;
+}
+
+form .check .label{
+    display: flex;
+    align-items: center;
+}
+
+form .check .checkbox{
+    display: none;
+}
+
+form .check .fake1{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #dedede;
+    border-radius: 2px;
+    position: relative;
+}
+
+form .check .fake1::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(1rem/2);
+    height: calc(1rem/2);
+    background: #dedede;
+    border-radius: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+form .check .checkbox:checked + .fake1::before{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+form .check .text {
+    padding-left: 10px;
+}
+
+
+.following input[type='button'] {
+    padding: 1.125rem 2.625rem 1.125rem 2.625rem;
+    font-size: 0.875rem;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    font-family: "Golos-Text_DemiBold";
+    background: linear-gradient(to right, #0052d4, #6fb1fc);
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.following .center .blue-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 16.875rem);
+    grid-template-rows: repeat(2, 10rem);
+    gap: 1.875rem;
+}
+
+.following .center .blue-grid .blue-block {
+    background: linear-gradient(to right, #101c30, #212a36);
+    display: flex;
+    font-size: 1rem;
+    font-family: "Golos-Text_Regular";
+    color: #f0f0f0;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.following .center .blue-grid .blue-block h3 {
+    color: #6fb1fc;
+    font-size: 1.875rem;
+    font-family: "Golos-Text_Bold";
+}
+
+
+
+
+
+
+
+footer {
+    padding: 1.875rem 0 1.875rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-family: "Golos-Text_Regular";
+    color: #dedede;
+}
+
+footer .text {
+    display: flex;
+}
+
+footer .text a {
+    color: #dedede;
+    text-decoration-line: underline;
+}
+
+footer .text p {
+    margin-right: 0.875rem;
+}
+
+footer .network a {
+    margin-right: 1.25rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 480px;
+        width: 95%;
+    }
+
+
+
+    .burger-menu {
+        display: block;
+    }
+
+    header nav,
+    header .icons-header {
+        display: none;
+    }
+
+
+
+
+    .buttons-tv{
+        flex-wrap: wrap;
+    }
+
+    .rec .movies {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .rec .movies img {
+        width: 100%;
+    }
+
+
+
+    .rec .title h2 {
+        text-align: center;
+    }
+
+    .rec .movies .film {
+        margin: auto;
+    }
+
+
+
+
+
+    .week .text {
+        width: 100%;
+    }
+
+    .week .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3.125rem;
+    }
+
+    .week .text .tabs {
+        justify-content: center;
+    }
+
+    .week {
+        flex-direction: column;
+    }
+
+    .week .images {
+        margin: auto;
+    }
+
+    .week .images img {
+        width: 100%;
+    }
+
+    .week .images .many-images img {
+        width: 48%;
+    }
+
+
+
+
+
+    .ustroistva {
+        flex-direction: column;
+    }
+
+    .ustroistva img {
+        width: 100%;
+        margin-bottom: 3.125rem;
+    }
+
+    .ustroistva .text {
+        margin: auto;
+
+    }
+
+
+
+
+
+
+    .following .title h2,
+    .following .title p {
+        text-align: center;
+    }
+
+    .following .center {
+        flex-direction: column-reverse;
+    }
+
+    .following .center .blue-grid {
+        margin-bottom: 3.125rem;
+    }
+
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .text {
+        flex-direction: column;
+        margin-bottom: 1.25rem;
+    }
+
+    footer .text p {
+        margin: 0px auto 1.25rem auto;
+    }
+
+    footer .text a {
+        text-align: center;
+    }
+
+
+}
+
+
+
+@media (min-width: 1201px) and (max-width: 1366px) {
+
+    html{
+        font-size: 18px;
+    }
+
+    .container{
+        max-width: 1366px;
+        width: 95%;
+    }
+
+
+}
